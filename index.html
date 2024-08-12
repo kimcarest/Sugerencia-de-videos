@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WatchNow: Sugerencias de vídeos para música, películas y series.">
+
+    <!-- link para bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- link google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <!-- stilo css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- link para imagen del favicon -->
+    <link rel="shortcut icon" href="assets/img/png-clipart-movie-logo-movie-logo-film-tape.png" type="image/x-icon">
+    <!-- nombre de la pagina -->
+    <title>WatchNow</title>
+</head>
+
+<body>
+    <!-- Aqui se encuentra los contenedores de la pagina -->
+    <div class="container">
+        <div class="text-center">
+            <img src="./assets/img/whatchnow.png" alt="Logo de WatchNow" class="img-fluid">
+            <h2 class="font-weight-bold my-3">Sugerencias de Vídeos</h2>
+        </div>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Música
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-center">
+                        <iframe id="musica" width="560" height="315" src="..." frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Película
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-center">
+                        <iframe id="peliculas" width="560" height="315" src="..." frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Serie
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-center">
+                        <iframe id="series" width="560" height="315" src="..." frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 
+    footer o pie de la pagina con informacion relevante de la pagina -->
+    <footer class="bg-dark text-light text-center py-3 mt-5">
+        <div class="box__copyright">
+            <h2 class="brand">WatchNow</h2>
+            <hr>
+            <h3>Suscríbete</h3>
+            <form action="#" method="post">
+                <label for="email" class="visually-hidden">Correo electrónico</label>
+                <input type="email" name="email" id="email" placeholder="Ingresa tu correo">
+                <button type="submit">Enviar</button>
+            </form>
+            <p class="mb-0 mt-3">&copy; Todos los Derechos Reservados 2024</p>
+            <div class="footer-links">
+                <a href="#">Aviso legal</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Términos y condiciones</a>
+            </div>
+            <a class="text-light">Integrantes</a>
+            <p>Alexia - Alba - Kimberly</p>
+        </div>
+    </footer>
+
+    <!-- script de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+        <!-- ruta para el script de javascript -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
